@@ -1,0 +1,58 @@
+body{
+	font-family: sans-serif;
+	background: url(1.png);
+	background-repeat: no-repeat;
+	background-position: cover;
+	background-size: 100% 650px;
+}
+
+h1{
+	text-align: center;
+	font-weight: 350px;
+	font-family: cursive;
+	font-size: 45px;
+	color: white;
+}
+.kotak_form{
+	width: 350px;
+	background:#c08457;
+	/*meletakkan form ke tengah*/
+	margin: 50px auto;
+	padding: 30px 20px;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+.tulisan_login{
+	text-align: center;
+	position: top;
+	font-family: serif;
+	font-size: 20px;
+	color: white;
+	font-weight: 150px;
+}
+ 
+label{
+	text-align: center;
+	font-size: 11pt;
+	color: white;
+	font-size: 15px;
+	font-family: serif;
+	padding top: 50px;
+	padding-left: 130px;
+	padding-right: 7px;
+	padding-bottom: 50px;
+
+}
+
+input{
+	box-sizing: border-box;
+	width:70%;
+	padding: 3px;
+	border-radius: 7px;
+	margin-left: 55px;
+	margin-top: 5px;
+	text-align: center;
+	font-family: serif;
+	font-size: 12pt;
+
+}
