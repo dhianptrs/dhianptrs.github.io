@@ -1,0 +1,249 @@
+@import url('https://www.1001fonts.com/search.html?search=rudiment&text=pecita')
+
+.header{
+    margin: 0;
+    width: 100%;
+    height:67px;
+
+
+}
+
+.menu{
+    width: 1360px;
+    float: left;
+    font-family: 'rudiment',sans-serif;
+
+}
+.menu ul li{
+    float: right;
+    list-style: none;
+    min-width: 120px;
+    height: 30px;
+    border-radius: 3px;
+    line-height: 30px;
+    margin: 6px 0px;
+}
+
+.menu ul li a{
+    display: block;
+    text-align: center;
+    border-radius: 3px;
+    letter-spacing: -0.2px;
+    color: #F5F5F5;
+    text-decoration: none;
+    font-size: 14px;
+    margin: 0px;
+    padding: 0px 8px;
+}
+
+
+.menu ul li a:hover{
+    color: white;
+    background-color: rgba(0,0,0,0.2);
+}
+
+.menu ul .on{
+    background: rgba(255,255,255,0.4);
+}
+
+.menu ul ul {
+    position: absolute;
+    width: 140px;
+    padding: 20px 5px;
+    background: ;
+    display: none;
+    text-align: center;
+    padding: 3px 25px;
+}
+
+.menu ul ul li {
+    display: block;
+    background: rgba(250,250,250,0.4);
+    color: white;
+    padding: 3px 25px;
+    margin-left: -30px;
+}
+
+.menu ul ul li:hover {
+    background: rgba(0,0,0,0.4);
+    color: gray;
+    padding: 3px 25px;
+    margin-left: -30px;
+}
+
+.menu ul li:hover ul {
+    display: block;
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ 
+body
+{
+    background:url('vektor.jpg'); ;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+* {
+    box-sizing:border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Slideshow container */
+.slideshow-container {
+
+
+    width: 90%;
+    position: relative;
+    margin: auto;
+    border-width: 10px solid white;
+    overflow: hidden;
+    color: white
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: white;
+  font-family: 'rudiment', sans-serif;
+  font-size: 70px;
+  font-weight: 1000px;
+  font-variant-position: center;
+  padding: 8px 0.1px;
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+.badan
+{
+    width: 1366px ;
+    margin: 45px auto;
+    background-color: #F5F5F5;
+    padding: 24px;
+    overflow: hidden;
+    font-family: sans-serif;
+   
+}
+.list-produk
+{
+    border: 2px solid gainsboro;
+    padding: 10px;
+    float: left;
+    width: 200px;
+    margin: 5px;
+}
+.list-produk:hover
+{
+    transition-duration: 700ms;
+    box-shadow: 5px 5px gainsboro;
+}
+ 
+.list-produk img
+{
+    width: 100%;
+    height: 150px;
+    display: block;
+    margin-bottom: 2px;
+   
+}
+ 
+.list-produk h2
+{
+    color: brown;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.list-produk a
+{
+     text-align: center;
+  
+
+}
+ 
+.tombol
+{
+    text-decoration: none;
+    border-radius: 7px;
+    padding: 7px;
+    display: block;
+    float: center;
+    width: 70%;
+    margin: 4px;
+    margin-left: 25px;
+    box-sizing: border-box;
+    color: brown;
+}
+
+.tombol:hover
+{
+
+    background-color: grey;
+    transition-duration: 700ms;
+}

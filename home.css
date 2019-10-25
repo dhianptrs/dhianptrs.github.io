@@ -1,0 +1,91 @@
+@import url('https://pecita.1001fonts.comnew-and-fresh-fonts.html?text=pecita&order=date+added')
+@import url('https://www.1001fonts.com/search.html?search=rudiment&text=pecita')
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Pecita', cursive;
+}
+body
+{
+    background:url(vektor.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'pecita', hand;
+}
+.content h1
+{
+	font-family:'pecita', hand;
+	font-size: 80px;
+	font-weight: 300px;
+}
+.content h2
+{
+font-family:'rudiment'
+}
+.badan
+{
+    width: cover;
+    margin: 45px auto;
+    background-color: #F5F5F5;
+    padding: 24px;
+    overflow: hidden;
+   
+}
+.list-produk
+{
+    border: 2px solid gainsboro;
+    padding: 10px;
+    float: left;
+    width: 200px;
+    margin: 5px;
+}
+.list-produk:hover
+{
+    transition-duration: 700ms;
+    box-shadow: 5px 5px gainsboro;
+}
+ 
+.list-produk img
+{
+    width: 100%;
+    height: 150px;
+    display: block;
+    margin-bottom: 2px;
+   
+}
+ 
+.list-produk h2
+{
+    color: brown;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.list-produk a
+{
+	 text-align: center;
+  
+
+}
+ 
+.tombol
+{
+    text-decoration: none;
+    border-radius: 7px;
+    padding: 7px;
+    display: block;
+    float: center;
+    width: 70%;
+    margin: 4px;
+    margin-left: 25px;
+    box-sizing: border-box;
+    color: brown;
+}
+
+.tombol:hover
+{
+
+    background-color: grey;
+    transition-duration: 700ms;
+}

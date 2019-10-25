@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LANDINGPAGE</title>
+<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+  <div class="header" >
+    <div class="menu">
+      <ul>
+        <li class="dropdown"><a href="#">JOIN US</a>
+            <ul class="isi-dropdown">
+                <li><a href="joinus.html"></a>Sign Up</li>
+                <li><a href="login.html"></a>Sign In</li>
+            </ul>
+        <li><a href="About.html">ABOUT</a></li>
+        <li ><a href="catalog.html">CATALOG</a></li>
+        <li><a href="home.html">HOME</a></li>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="slideshow-container">
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 5</div>
+        <img src="oleh.jpg" style="width:100%">
+      <div class="text">WHERE IT ALL BEGINS</div>
+  </div>
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 5</div>
+        <img src="pasar-kurma.jpg" style="width:100%">
+      <div class="text">SAVE YOUR MONEY, FOR THE BETTER JOURNEY</div>
+  </div>
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 5</div>
+        <img src="seniubub.jpg" style="width:100%">
+      <div class="text">DISCOVER THE WORLD</div>
+  </div>
+     <div class="mySlides fade">
+      <div class="numbertext">4 / 5</div>
+        <img src="tul.jpg" style="width:100%">
+      <div class="text">THE BEST GIVE FOR THE BEST LOVE</div>
+  </div>
+     <div class="mySlides fade">
+      <div class="numbertext">5 / 5</div>
+        <img src="kalung.jpg" style="width:100%">
+      <div class="text">THE HARMONY OF NATURE AND CULTURE</div>
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<div class="badan">      
+          <div class="list-produk">          
+          <img src="turki.jpg" alt="Peci"> 
+            <h2>LIMITED</h2>           
+            <a class="tombol tombol-detail" href="#">Shop Now</a> 
+        </div> 
+        <div class="list-produk">          
+          <img src="list.jpg" alt="Rotan"> 
+            <h2>UNIQUE</h2>           
+            <a class="tombol tombol-detail" href="#">Shop Now</a> 
+        </div> 
+        <div class="list-produk">          
+          <img src="rusia.jpg" alt="Ceramics"> 
+            <h2>ABSTRACT</h2>          
+            <a class="tombol tombol-detail" href="#">Shop Now</a> 
+        </div> 
+         <div class="list-produk">          
+          <img src="asek.jpg" alt="Bag"> 
+            <h2>STYLISH</h2>           
+            <a class="tombol tombol-detail" href="#">Shop Now</a> 
+          
+        </div>     
+         <div class="list-produk">          
+          <img src="tul.jpg" alt="Boneka"> 
+            <h2>CUTENESS</h2>          
+            <a class="tombol tombol-detail" href="#">Shop Now</a> 
+        </div> 
+         <div class="list-produk">          
+          <img src="ing.jpg" alt="Miniatur"> 
+            <h2>ELEGANT</h2>           
+            <a class="tombol tombol-detail" href="#">Shop Now</a> 
+          
+        </div> 
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none"; 
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1} 
+  slides[slideIndex-1].style.display = "block"; 
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+
+
+
+</script>
+
+</body>
+</html> 
