@@ -1,49 +1,65 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>FORM</title>
+	<title></title>
 	<link rel="stylesheet" type="text/css" href="login.css">
+
 </head>
 <body>
-	<div class="header">
+<div class="header">
     <div class="menu">
       <ul>
-        <li ><a href="bismillah.html">HOME</a></li>
+        <li ><a href="home.html">HOME</a></li>
         <li ><a href="catalog.html">CATALOG</a>
         </li>
-        <li ><a href="About.html">ABOUT</a></li>
-        <li class="on" class="dropdown"><a href="#">JOIN US</a>
+        <li ><a href="#">ABOUT</a></li>
+        <li class="dropdown"><a href="#">JOIN US</a>
             <ul class="isi-dropdown">
-                <li ><a href="joinus.html">Sign Up</a></li>
-                <li class="on"><a href="login.html">Sign In</a></li>
+                <li><a href="joinus.html"></a>Sign Up</li>
+                <li><a href="login.html"></a>Sign In</li>
             </ul>
       </ul>
     </div>
-  </div>
-	<h1> Welcome to Souland!</h1>
-	<div class = "kotak_form">
-		<form>
-			<h1 class="tulisan_login">Halooo, Souvers</h1><br>
-			<div class="isian">
-			<label for="Username" style="padding-left: 145px;">Username</label><br>
-			<input type="text" name="Username" placeholder="@Username">
-				<br><br>
-			<label for="Password" style="padding-left: 147px;">Password</label><br>
-			<input type="Password" name="Password" placeholder="Password">
-			<br><br>
-		
+</div>
+<div class="panel-login">
+		<form action="#" method="POST" onSubmit="validasi()">
+							
+		<div class="kotak-oren">
+			<h1>Hello, Friend!</h1>
+			<p>Enter your personal detail and start your jorney with us</p>
+			<label id="label-login" for="log-kotak-login">Register</label>
 			
-
-			
-			
-			
-				<br>
-			<input href="bismillah.html" type="Submit" class="tombol_login"value="Sign In">
-
-			<br>
-			<br>
-
+		</div>
+							
+		<div class="kotak-putih">
+			<div class="kotak-login">
+				<h2>SIGN IN TO SOULAND</h2>
+				<div>
+				<input type="text" id="Email" placeholder="Email">
+				</div>
+				<div>
+				<input type="password" id="Password" placeholder="Password">
+				</div>
+				<div>
+				<input type="submit" value="Sign In">
+				</div>
+				<a href="">Forgot your password?</a>
 			</div>
 		</div>
+		</form>
+	</div>
+
 </body>
+<script type="text/javascript">
+	function validasi() {
+		var Email = document.getElementById("Email").value;
+		var Password = document.getElementById("Password").value;
+		if (Email!= "" && Password!="") {
+			return true;
+		}else{
+			alert('Anda Harus Mengisi Data dengan Lengkap !');
+		}
+	}
+</script>
 </html>
+
