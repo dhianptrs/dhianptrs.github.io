@@ -1,25 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Keranjang</title>
+	<title>Checkout</title>
 	<link rel="stylesheet" type="text/css" href="checkout.css">
 </head>
 <body>
 <div class="header">
-		<div class="menu">
-		<ul>
-        <li ><a href="bismillah.html">HOME</a></li>
-        <li class="on"><a href="catalog.html">CATALOG</a></li>
-        <li ><a href="About.html">ABOUT</a></li>
-        <li class="dropdown"><a href="#">JOIN US</a>
-        	 <ul class="isi-dropdown">
-                <li><a href="joinus.html">Sign Up</a></li>
-                <li><a href="login.html">Sign In</a></li>
-              </ul>
+    <div class="menu">
+      <ul>
+        <li><a class="klik_menu" id="home" href="index.html">HOME</a></li>
+        <li class="on"><a class="klik_menu" id="catalog" href="catalog.html">CATALOG</a>
         </li>
+        <li><a class="klik_menu" id="about" href="About.html">ABOUT</a></li>
+         <li ><a class="klik_menu" id="joinus" href="login.html">SIGN IN</a></li>
       </ul>
     </div>
-  </div>
 
 		<div class="produk">
 			<div class="kiri">
@@ -37,13 +32,13 @@
 						<input type="checkbox"  checked="checked">
 						<span class="checkmark"></span>
 					</label>
-					<img src="TAS9.jpg" alt="gambar gagal dimuat">
+					<img src="sepatu.jpg" alt="gambar gagal dimuat">
 					<div class="ket">
 						<div class="judul">
-							Tas Kulit
+							Sepatu Boots
 						</div>
 						<div class="harga">
-							Rp.139.999
+							Rp.150.000
 						</div>
 					</div>
 					<div class="jml">
@@ -62,13 +57,13 @@
 						<input type="checkbox"  checked="checked">
 						<span class="checkmark"></span>
 					</label>
-					<img src="TAS6.jpg" alt="gambar gagal dimuat">
+					<img src="sepatu.jpg" alt="gambar gagal dimuat">
 					<div class="ket">
 						<div class="judul">
-							Tas Rajut
+							Sepatu Biits
 						</div>
 						<div class="harga">
-							Rp.89.999
+							Rp.150.000
 						</div>
 					</div>
 					<div class="jml">
@@ -91,10 +86,31 @@
 				</div>
 				<hr>
 				<div class="tombol">
-					<a href="pemesanan.html">Beli</a>
+					<a href="pesan.html">Beli</a>
 				</div>
 			</div>
 		</div>
 </div>
 </body>
+<script type="text/javascript">
+	&(document).ready(function(){
+		$('.klik_menu').click(function(){
+			var menu = $(this).attr('id');
+			if(menu == "home"){
+				$('.badan').load('index.html');
+			}else if (menu == "catalog") {
+				$('.badan').load('catalog.html');
+			}else if (menu == "about") {
+				$('.badan').load('about.html');
+			}else if (menu == "joinus"){
+				$('.badan').load('login.html');
+			}
+		});
+
+		$('.badan').load('index.html');
+
+	});
+</script>
 </html>
+
+

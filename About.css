@@ -1,24 +1,19 @@
-
-body{
-	margin: 0;
-	background-image: url('vektor.jpg');
-	background-repeat: no-repeat;
-	background-size: 1366px;
-}
-
+@import url('https://fonts.googleapis.com/css?family=Mukta');
+@import url('https://www.1001fonts.com/search.html?search=rudiment&text=pecita')
+@import url('https://www.1001fonts.com/pecita-font.html')
 .header{
-	margin: 0;
-	width: 100%;
-	height:67px;
+    margin: 0;
+    width: 100%;
+    height:67px;
 
 }
 .menu{
-	width: 550px;
-	float: right;
-	font-family: sans-serif;
+    width: 550px;
+    float: right;
+    font-family: sans-serif;
 }
 .menu ul li{
-	float: left;
+    float: left;
     list-style: none;
     min-width: 120px;
     height: 30px;
@@ -28,7 +23,7 @@ body{
 }
 
 .menu ul li a{
-	display: block;
+    display: block;
     text-align: center;
     border-radius: 3px;
     letter-spacing: -0.2px;
@@ -46,7 +41,7 @@ body{
 }
 
 .menu ul .on{
-	background: rgba(255,255,255,0.4);
+    background: rgba(255,255,255,0.4);
 }
 
 .menu ul ul {
@@ -77,33 +72,86 @@ body{
 .menu ul li:hover ul {
     display: block;
 }
-.content{
-	text-align: center;
-	color: white;
-}
-.content h1{
-	margin-top: 100px;
-	font-family: 'Chiller', fantasy;
-	font-size: 150px;
-	margin-bottom: -20px;
-	
-}
-
-.content h2{
-	margin: 0;
-	margin-bottom: 100px;
+body{
+    font-family: 'Mukta', sans-serif;
+	height:100vh;
+	min-height:550px;
+	background-image: url(vektor.jpg);
+	background-repeat: no-repeat;
+	background-size:cover;
+	background-position:center;
+	position:relative;
+    overflow-y: hidden;
 }
 
-.text {
-	text-align: center;
-	color: white;
+.panel-login{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+	text-align:center;
+    width:70%;
+	right:0;
+    left:0;
+    margin:auto;
+    height:400px;
+    background-color:#C87A4C  ;
 }
-.text h4{
-	margin-top: 50px;
-	font-family: Arial;
-	font-size: 30px;
+.kotak-putih{
+    background-color: rgba(255,255, 255, 1);
+    height:500px;
+    position:absolute;
+    top:-60px;
+    width:50%;
+    right:calc(50% - 50px);
+    transition:.3s ease-in-out;
+    z-index:0;
+    box-shadow: 0 0 15px 9px #00000096;
+    font-family: 'sans-serif';
+    text-align: justify-all;
 }
-.text p{
-	margin: 0;
-	font-size: 20px;
+
+.kotak-oren {
+    width:30%;
+    padding:0 70px;
+    top:20%;
+    right:0;
+    position:absolute;
+    text-align:center;
+
+   
+}
+.kotak-oren h1{
+    padding:0px;
+    margin-bottom: -30px;
+    font-family:'pecita';
+    color:white;
+    font-size: 80px;
+    text-align: center;
+}
+.kotak-oren h2{
+    padding:-100px;
+    font-family: 'rudiment';
+    font-size: 30px;
+    color: white;
+}
+
+.kotak-login{
+    z-index: 1;
+    opacity:1;
+    color:brown;
+    text-align:left;
+    padding:50px;
+    margin-left: -10px;
+    margin-right: 10px;
+}
+
+.kotak-login h1 , p{
+    color: grey;
+    text-decoration: none;
+}
+@media screen and (max-width: 600px) {
+  .panel-login, .kotak-oren,.kotak-putih,.kotak-login input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
 }

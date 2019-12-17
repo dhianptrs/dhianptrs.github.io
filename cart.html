@@ -1,43 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Beli Sekarang</title>
+	<title>Keranjang Bellanja</title>
 	<link rel="stylesheet" type="text/css" href="cartt.css">
 </head>
 <body>
 <div class="header">
-		<div class="menu">
-		<ul>
-        <li ><a href="bismillah.html">HOME</a></li>
-        <li class="on"><a href="catalog.html">CATALOG</a></li>
-        <li ><a href="About.html">ABOUT</a></li>
-        <li class="dropdown"><a href="#">JOIN US</a>
-        	 <ul class="isi-dropdown">
-                <li><a href="joinus.html">Sign Up</a></li>
-                <li><a href="login.html">Sign In</a></li>
-              </ul>
+    <div class="menu">
+      <ul>
+        <li><a class="klik_menu" id="home" href="index.html">HOME</a></li>
+        <li  class="on"><a class="klik_menu" id="catalog" href="catalog.html">CATALOG</a>
         </li>
+        <li><a class="klik_menu" id="about" href="About.html">ABOUT</a></li>
+         <li><a class="klik_menu" id="joinus" href="login.html">SIGN IN</a></li>
       </ul>
     </div>
-  </div>
 
-		<div class="navigator">
-			<a href="catalog.html">Catalog</a> >
-			<a href="tas.html">Tas</a> >
-			<a href="tas.html" class="aktif">Tas Kulit</a>
-		</div>
 
 		<div class="produk">
 			<div class="kiri">
 				<div class="gambar">
-					<img src="TAS9.jpg">
+					<img src="sepatu.jpg">
 				</div>
 
 				<div class="aksi">
-					<div class="nama">Tas Kulit</div>
-					<div class="harga">Rp. 139.999</div>
+					<div class="nama">Sepatu</div>
+					<div class="harga">Rp. 150.000</div>
 					<br><br><br>
-					<a class="beli" href="pemesanan.html">Beli Sekarang</a>
+					<a class="beli" href="pesan.html">Beli Sekarang</a>
 					<a class="a" href="checkout.html">Tambah ke keranjang</a>
 					<a class='a' href="a">Tanya penjual</a>
 
@@ -45,14 +35,44 @@
 			</div>
 			<div class="kanan">
 				<h3>Deskripsi Produk</h3>
-				<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+				<p>Sepatu pantofel pria cocok untuk acara formal model terbaru di buat dari kulit sapi asli, sol karet kuat dan nyaman dengan harga yang terjangkau. 
+				Hand made Indonesia, kualitas di jaga. 
+
+				REAL PICT! 
+				(Sepatu di foto langsung) 
+
+				Bahan : kulit sapi 100%
+				Lapis dalam : AC+++
+				Outsol : karet
+				Size : 39.40.41.42.43.
+
+				Detail size panjang telapak kaki pemakai
+				39 = 24cm
+				40 = 25cm
+				41 = 25.5cm
+				42 = 26cm
+				43 = 27cm</p>
 			</div>
 		</div>
 </div>
 </body>
+<script type="text/javascript">
+	&(document).ready(function(){
+		$('.klik_menu').click(function(){
+			var menu = $(this).attr('id');
+			if(menu == "home"){
+				$('.badan').load('index.html');
+			}else if (menu == "catalog") {
+				$('.badan').load('catalog.html');
+			}else if (menu == "about") {
+				$('.badan').load('about.html');
+			}else if (menu == "joinus"){
+				$('.badan').load('login.html');
+			}
+		});
+
+		$('.badan').load('index.html');
+
+	});
+</script>
 </html>

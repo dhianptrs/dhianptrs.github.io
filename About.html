@@ -1,35 +1,99 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>About</title>
-	<link rel="stylesheet" type="text/css" href="About.css">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="about.css">
+
 </head>
 <body>
 <div class="header">
-		<div class="menu">
-     	<ul>
-        <li ><a href="bismillah.html">HOME</a></li>
-        <li ><a href="catalog.html">CATALOG</a></li>
-        <li class="on"><a href="About.html">ABOUT</a></li>
-        <li class="dropdown"><a href="#">JOIN US</a>
-        	 <ul class="isi-dropdown">
-                <li><a href="joinus.html">Sign Up</a></li>
-                <li><a href="login.html">Sign In</a></li>
-              </ul>
+    <div class="menu">
+      <ul>
+        <li><a class="klik_menu" id="home" href="index.html">HOME</a></li>
+        <li ><a class="klik_menu" id="catalog" href="catalog.html">CATALOG</a>
         </li>
+        <li class="on"><a class="klik_menu" id="about" href="About.html">ABOUT</a></li>
+         <li><a class="klik_menu" id="joinus" href="login.html">SIGN IN</a></li>
       </ul>
     </div>
-  </div>
-<div class="content">
-		<h1>Souland</h1>
-		<h2>SouvenirIsland</h2>
+<div class="panel-login">
+		<form action="#" method="POST" onSubmit="validasi()">
+							
+		<div class="kotak-oren">
+			<h1>Souland</h1>	
+			<h2>Souvenir Island</h2>					
+		</div>
+							
+		<div class="kotak-putih">
+			<div class="kotak-login">
+
+				<h1>Hello, Friend!</h1>
+			<p>Souland didirikan pada tahun 2019. Saat ini, Souland merupakan retail online shop yang memperjualkan belikan merchandise atau oleh-oleh yang berasal dari berbagai daerah wisata. Tujuannya yaitu untuk mempermudah wisatawan yang berkunjung pada suatu tempat yang tidak sempat untuk membeli oleh-oleh untuk sanak keluarga yang ada dirumah.Dengan pilihan lebih dari 500 brand lokal dan internasional, kami menawarkan berbagai cinderamata ke dalam dimensi yang lebih baik dari sebelumnya. Kami menawarkan tas, baju, sandal, gantungan kunci, dan masih banyak lagi! Hal inilah yang membuat kami menjadi pelopor E-commerce souvenir di Indonesia. 
+			</p>
+			</div>
+		</div>
+		</form>
 	</div>
+	<script type="text/javascript">
+	&(document).ready(function(){
+		$('.klik_menu').click(function(){
+			var menu = $(this).attr('id');
+			if(menu == "home"){
+				$('.badan').load('index.html');
+			}else if (menu == "catalog") {
+				$('.badan').load('catalog.html');
+			}else if (menu == "about") {
+				$('.badan').load('about.html');
+			}else if (menu == "joinus"){
+				$('.badan').load('login.html');
+			}
+		});
 
-<div class="text">
-	<h4> Get ready to bring your souvenirs from travelling</h4>
-	<p> if you wanna give your friend, family, or tour love a souvenir from your travel. Let's find anything on there, souvers...<p>
+		$('.badan').load('index.html');
 
-<div class="img">
-	
+	});
+</script>
+
 </body>
+
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="pemesanan.css">
+
+</head>
+<body>
+<div class="header">
+    <div class="menu">
+      <ul>
+        <li><a class="klik_menu" id="home" href="index.html">HOME</a></li>
+        <li class="on"><a class="klik_menu" id="catalog" href="catalog.html">CATALOG</a>
+        </li>
+        <li><a class="klik_menu" id="about" href="About.html">ABOUT</a></li>
+         <li ><a class="klik_menu" id="joinus" href="login.html">SIGN IN</a></li>
+      </ul>
+    </div>
+<div class="panel-login">
+		<form action="#" method="POST" onSubmit="validasi()">
+							
+		<div class="kotak-oren">
+			<h1>CheckOut to Souland!</h1>
+			<label id="label-login" for="log-kotak-login"><a href="index.html">Check Out</a></label>
+			
+			
+		</div>
+							
+		<div class="kotak-putih">
+			<div class="kotak-login">
+				<h4>Silakan isi form di bawah ini untuk melakukan pemesanan barang </h4>
+				<div>
+				<input type="text" name="Nama" id="Nama" placeholder="Nama Lengkap">
+				</div>
+				<div>
+				<input type="text" id="Tlp" placeholder="Telephone">
+				</div>
+				<div>
+				<input type="text" id="Adr" placeholder="Alamat Lengkap">
+				</div>
+				<div class="row">
+            	<div class="col5">
+            		 <label for="Bayar"><span>Metode Pembayaran </span></label>
+		            	<select name="Bayar" class="select-field">
+		  					<option value="COD">COD</option>
+		 				 	<option value="Transfer">Transfer</option>
+		  					<option value="Mart">Indomaret/Alfamart</option>
+						</select>
+            	</div>
+            	<div class="col5">
+            		<label for="Ekpedisi"><span>Ekspedisi </span>
+            			</label>
+						<select name="Ekspedisi" class="select-field">
+		  					<option value="JNT">JNT</option>
+		  					<option value="JNE">JNE</option>
+		  					<option value="SiCepat">SiCepat</option>
+						</select>
+				</div>
+            	</div>         
+            	<fieldset>
+			<label for="Pesan">Pesan Khusus</label>
+			<textarea name="Pesan" class="textarea-field"></textarea>
+			</fieldset>
+			<label>
+          		<input type="checkbox" checked="checked" name="persetujuan"> Data Yang Saya Inputkan Telah Sesuai
+        	</label>				
+			</div>
+		</div>
+		</form>
+	</div>
+
+</body>
+<script type="text/javascript">
+	function validasi() {
+		var Nama = document.getElementById("Nama").value;
+		var Tlp = document.getElementById("Tlp").value;
+		var Adr = document.getElementById("Adr").value;
+		var checked = document.getElementsByTagName("checked").value;
+
+		if (Nama!="" && Tlp!= "" && Adr!="" && checked! ="") {
+			return true;
+		}else{
+			alert('Anda Harus Mengisi Data dengan Lengkap !');
+		}
+	}
+		&(document).ready(function(){
+		$('.klik_menu').click(function(){
+			var menu = $(this).attr('id');
+			if(menu == "home"){
+				$('.badan').load('index.html');
+			}else if (menu == "catalog") {
+				$('.badan').load('catalog.html');
+			}else if (menu == "about") {
+				$('.badan').load('about.html');
+			}else if (menu == "joinus"){
+				$('.badan').load('login.html');
+			}
+		});
+
+		$('.badan').load('index.html');
+
+	});
+</script>
+</html>
+

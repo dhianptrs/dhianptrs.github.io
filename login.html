@@ -2,32 +2,29 @@
 <html>
 <head>
 	<title></title>
-	<link rel="stylesheet" type="text/css" href="login.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
 
 </head>
 <body>
 <div class="header">
     <div class="menu">
       <ul>
-        <li ><a href="home.html">HOME</a></li>
-        <li ><a href="catalog.html">CATALOG</a>
+        <li><a class="klik_menu" id="home" href="index.html">HOME</a></li>
+        <li ><a class="klik_menu" id="catalog" href="catalog.html">CATALOG</a>
         </li>
-        <li ><a href="#">ABOUT</a></li>
-        <li class="dropdown"><a href="#">JOIN US</a>
-            <ul class="isi-dropdown">
-                <li><a href="joinus.html"></a>Sign Up</li>
-                <li><a href="login.html"></a>Sign In</li>
-            </ul>
+        <li><a class="klik_menu" id="about" href="About.html">ABOUT</a></li>
+         <li class="on"><a class="klik_menu" id="joinus" href="login.html">SIGN IN</a></li>
       </ul>
     </div>
-</div>
+
 <div class="panel-login">
 		<form action="#" method="POST" onSubmit="validasi()">
 							
 		<div class="kotak-oren">
 			<h1>Hello, Friend!</h1>
-			<p>Enter your personal detail and start your jorney with us</p>
-			<label id="label-login" for="log-kotak-login">Register</label>
+			<p>Enter your personal detail and start your journey with us</p>
+			<label id="label-login" for="log-kotak-login"><a href="signup.html">Sign Up</a></label>
+
 			
 		</div>
 							
@@ -35,13 +32,13 @@
 			<div class="kotak-login">
 				<h2>SIGN IN TO SOULAND</h2>
 				<div>
-				<input type="text" id="Email" placeholder="Email">
+				<input type="email" id="Email" placeholder="Email">
 				</div>
 				<div>
 				<input type="password" id="Password" placeholder="Password">
 				</div>
 				<div>
-				<input type="submit" value="Sign In">
+				<label id="label-login" for="log-kotak-login"><a href="index.html">Sign In</a></label>
 				</div>
 				<a href="">Forgot your password?</a>
 			</div>

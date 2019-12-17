@@ -11,18 +11,14 @@
 <div class="header">
     <div class="menu">
       <ul>
-        <li ><a href="bismillah.html">HOME</a></li>
-        <li class="on"><a href="catalog.html">CATALOG</a></li>
-        <li><a href="About.html">ABOUT</a></li>
-        <li class="dropdown"><a href="#">JOIN US</a>
-        	 <ul class="isi-dropdown">
-                <li><a href="joinus.html">Sign Up</a></li>
-                <li><a href="login.html">Sign In</a></li>
-              </ul>
+        <li><a class="klik_menu" id="home" href="index.html">HOME</a></li>
+        <li class="on"><a class="klik_menu" id="catalog" href="catalog.html">CATALOG</a>
         </li>
+        <li><a class="klik_menu" id="about" href="About.html">ABOUT</a></li>
+         <li ><a class="klik_menu" id="joinus" href="login.html">SIGN IN</a></li>
       </ul>
     </div>
-  </div>
+</div>
       <div class="badan">      
       <h1> Produk Baru </h1> 
         <div class="list-produk">          
@@ -99,7 +95,25 @@
         </div>  
   </div>
 
+<script type="text/javascript">
+	&(document).ready(function(){
+		$('.klik_menu').click(function(){
+			var menu = $(this).attr('id');
+			if(menu == "home"){
+				$('.badan').load('index.html');
+			}else if (menu == "catalog") {
+				$('.badan').load('catalog.html');
+			}else if (menu == "about") {
+				$('.badan').load('about.html');
+			}else if (menu == "joinus"){
+				$('.badan').load('login.html');
+			}
+		});
 
+		$('.badan').load('index.html');
+
+	});
+</script>
 
 
 

@@ -77,29 +77,6 @@ body{
 }
 
  
-
-.navigator{
-	margin-left:10px;
-	top:100px;
-	color:white;
-	position: absolute;
-	width:100%;
-}
-
-.navigator a{
-	text-decoration:none;
-	color:white;
-}
-.navigator .aktif{
-	color:grey;
-}
-.navigator .aktif:hover{
-	color:black;
-}
-.navigator a:hover{
-	color:gray;
-}
-
 .produk{
 	position:absolute;
 	margin-top:120px;
@@ -140,7 +117,7 @@ body{
 }
 
 .produk .aksi .harga{
-	color:brown;
+	color:green;
 	font-weight:bold;
 }
 .produk .aksi .jumlah{
@@ -152,7 +129,7 @@ body{
 }
 
 .produk .aksi .beli{
-	background-color:brown;
+	background-color:green;
 	color:white;
 	border-radius:10px;
 	border:0px;
@@ -166,13 +143,14 @@ body{
 
 .produk .aksi .beli:hover{
 	color:black;
-	background-color:brown;
+	background-color:darkgreen;
 }
 
 .produk .aksi .a{
-	background-color:brown;
+	background-color:white;
 	color:black;
 	border-radius:10px;
+	border:1px solid green;
 	padding:10px 20px;
 	width:177px;
 	float:left;
@@ -181,8 +159,8 @@ body{
 }
 
 .produk .aksi .a:hover{
-	color:brown;
-	background-color:white;
+	color:white;
+	background-color:green;
 	border-color:black;
 }
 
@@ -204,5 +182,5 @@ body{
 .produk .kanan p{
 	color:gray;
 	font-size:14px;
-	margin:5px 0px;\
+	margin:5px 0px;
 }

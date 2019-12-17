@@ -1,35 +1,41 @@
 @import url('https://www.1001fonts.com/search.html?search=rudiment&text=pecita')
+@import url('https://www.1001fonts.com/pecita-font.html')
+
+body{
+  margin:0px;
+  background-image: url('vektor.jpg');
+  background-repeat: no-repeat;
+  background-size: 1366px;
+  position: fixed;
+}
 
 .header{
-    margin: 0;
-    width: 100%;
-    height:67px;
-
+  margin: 20px;
+  width: 100%;
+  height:67px;
 
 }
-
 .menu{
-    width: 1360px;
-    float: left;
-    font-family: 'rudiment',sans-serif;
-
+  width: 550px;
+  float: right;
+  font-family: sans-serif;
 }
 .menu ul li{
-    float: right;
+  float: left;
     list-style: none;
     min-width: 120px;
     height: 30px;
     border-radius: 3px;
     line-height: 30px;
-    margin: 6px 0px;
+    margin: 2px 0px;
 }
 
 .menu ul li a{
-    display: block;
+  display: block;
     text-align: center;
     border-radius: 3px;
     letter-spacing: -0.2px;
-    color: #F5F5F5;
+    color: white;
     text-decoration: none;
     font-size: 14px;
     margin: 0px;
@@ -38,12 +44,12 @@
 
 
 .menu ul li a:hover{
-    color: white;
+    color: #bdbdbd;
     background-color: rgba(0,0,0,0.2);
 }
 
 .menu ul .on{
-    background: rgba(255,255,255,0.4);
+  background: rgba(255,255,255,0.4);
 }
 
 .menu ul ul {
@@ -53,21 +59,21 @@
     background: ;
     display: none;
     text-align: center;
-    padding: 3px 25px;
+    padding: 3px 15px;
 }
 
 .menu ul ul li {
     display: block;
     background: rgba(250,250,250,0.4);
     color: white;
-    padding: 3px 25px;
+    padding: 3px 15px;
     margin-left: -30px;
 }
 
 .menu ul ul li:hover {
     background: rgba(0,0,0,0.4);
     color: gray;
-    padding: 3px 25px;
+    padding: 3px 15px;
     margin-left: -30px;
 }
 
@@ -79,7 +85,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Arial',sans-serif;
 }
  
 body
@@ -95,17 +101,34 @@ body
     padding: 0;
     margin: 0;
 }
+.content{
+  text-align: center;
+  color: white;
+  font-family: 'rudiment', sans-serif;
+}
+.content h1{
+  margin-top: 100px;
+  font-family: 'pecita';
+  font-size: 140px;
+  margin-bottom: -20px;
+  
+}
+
+.content h2{
+  margin: 0;
+  margin-bottom: 100px;
+  padding: 5px;
+  font-family: 'rudiment',sans-serif;
+  font-size:50px;
+}
+
+* {box-sizing:border-box}
 
 /* Slideshow container */
 .slideshow-container {
-
-
-    width: 90%;
-    position: relative;
-    margin: auto;
-    border-width: 10px solid white;
-    overflow: hidden;
-    color: white
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
 }
 
 /* Hide the images by default */
@@ -142,14 +165,11 @@ body
 
 /* Caption text */
 .text {
-  color: white;
-  font-family: 'rudiment', sans-serif;
-  font-size: 70px;
-  font-weight: 1000px;
-  font-variant-position: center;
-  padding: 8px 0.1px;
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
   position: absolute;
-  bottom: 20px;
+  bottom: 8px;
   width: 100%;
   text-align: center;
 }
@@ -163,6 +183,21 @@ body
   top: 0;
 }
 
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
 
 /* Fading animation */
 .fade {
@@ -246,4 +281,10 @@ body
 
     background-color: grey;
     transition-duration: 700ms;
+}
+@media screen and (max-width: 600px) {
+  .panel-login, .kotak-oren,.kotak-putih,.kotak-login input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
 }

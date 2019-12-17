@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+<div class="header">
+    <div class="menu">
+      <ul>
+        <li><a class="klik_menu" id="home" href="index.html">HOME</a></li>
+        <li ><a class="klik_menu" id="catalog" href="catalog.html">CATALOG</a>
+        </li>
+        <li><a class="klik_menu" id="about" href="About.html">ABOUT</a></li>
+         <li class="on"><a class="klik_menu" id="joinus" href="signup.html">SIGN UP</a></li>
+      </ul>
+    </div>
+</div>
+<div class="panel-login">
+		<form action="#" method="POST" onSubmit="validasi()">
+							
+		<div class="kotak-oren">
+			<h1>Welcome Back!</h1>
+			<p>To keep connected with us please login with your personal info</p>
+			<label id="label-login" for="log-kotak-login"><a href="login.html">Sign In</a></label>
+
+			
+		</div>
+							
+		<div class="kotak-putih">
+			<div class="kotak-login">
+				<h2>CREATE ACCOUNT</h2>
+				<div>
+				<input type="text" name="Nama" id="Nama" placeholder="Nama">
+				</div>
+				<div>
+				<input type="email" id="Email" placeholder="Email">
+				</div>
+				<div>
+				<input type="password" id="Password" placeholder="Password">
+				</div>
+				<div>
+				<label id="label-login" for="log-kotak-login"><a href="index.html">Sign Up</a></label>
+				</div>
+			</div>
+		</div>
+		</form>
+	</div>
+
+</body>
+<script type="text/javascript">
+	function validasi() {
+		var Nama = document.getElementById("Nama").value;
+		var Email = document.getElementById("Email").value;
+		var Password = document.getElementById("Password").value;
+		if (Nama!="" && Email!= "" && Password!="") {
+			return true;
+		}else{
+			alert('Anda Harus Mengisi Data dengan Lengkap !');
+		}
+	}
+		&(document).ready(function(){
+		$('.klik_menu').click(function(){
+			var menu = $(this).attr('id');
+			if(menu == "home"){
+				$('.badan').load('index.html');
+			}else if (menu == "catalog") {
+				$('.badan').load('catalog.html');
+			}else if (menu == "about") {
+				$('.badan').load('about.html');
+			}else if (menu == "joinus"){
+				$('.badan').load('login.html');
+			}
+		});
+
+		$('.badan').load('index.html');
+
+	});
+</script>
+</html>
+
